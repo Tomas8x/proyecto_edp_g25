@@ -37,4 +37,5 @@ if [[ $ARGS =~ $regex ]]; then
   comprimir imagenes_generadas | md5sum > suma_de_verificaciones.txt # Comprime el directorio con imagenes y crea un .txt con la suma de verificaciones de la compresion.
 else
   echo "Ingrese un numero mayor a 0"
+
 fi
