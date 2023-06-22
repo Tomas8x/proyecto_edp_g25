@@ -21,9 +21,11 @@ echo "Ingrese la cantidad de imágenes que desea generar: "
 read ARGS
 regex='^[1-9][0-9]*$' # Expresion regular para que el ingreso sea un numero mayor a 0.
 if [[ $ARGS =~ $regex ]]; then
-  for ((i=1; i<=ARGS; i++)); do # Valor inicial de la variable i=1. El bucle se ejecutará mientras i<=ARGS. Después de cada iteración, la variable i se incrementa en 1 mediante i++.
-    IMAGEN_GENERADA=$(obtener_imagen)
-    NOMBRE_GENERADO=$(obtener_nombres)
-    mv "$IMAGEN_GENERADA" "${NOMBRE_GENERADO}_${i}.jpg" # Esta sintaxis hace que los nombres de cada imagen sean unicos agregando al nombre el numero de iteracion por el que va el bucle for.
+  mkdir imagenes_generadas  
+    for ((i=1; i<=ARGS; i++)); do # Valor inicial de la variable i=1. El bucle se ejecutará mientras i<=ARGS. Después de cada iteración, la variable i se incrementa en 1 mediante i++.
+      IMAGEN_GENERADA=$(obtener_imagen)
+      NOMBRE_GENERADO=$(obtener_nombres)
+      mv "$IMAGEN_GENERADA" "${NOMBRE_GENERADO}_${i}.jpg" # Esta sintaxis hace que los nombres de cada imagen sean unicos agregando al nombre el numero de iteracion por el que va el bucle for.
+      mv "${NOMBRE_GENERADO}_${i}.jpg" imagenes_generadas
   done
 fi
