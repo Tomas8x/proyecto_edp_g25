@@ -12,9 +12,9 @@ ocurrió algún error se debe informar al usuario de lo contrario se procede
 a descomprimir.
 ------
 • procesar.sh: Se deberán recortar las imágenes a una resolución de
-512*512 con alguna utilidad como imagemagick. Solamente deben proce-
-sarse aquellas imágenes que tengan nombres de personas válidos. Entién-
-dase por nombres de personas válidos a cualquier combinación de palabras
+512*512 con alguna utilidad como imagemagick. Solamente deben
+procesarse aquellas imágenes que tengan nombres de personas válidos.
+Entiendase por nombres de personas válidos a cualquier combinación de palabras
 que empiecen con un letra mayúscula y sigan por minúsculas.
 ------
 • comprimir.sh: Finalmente, luego de procesadas las imágenes, se debe:
