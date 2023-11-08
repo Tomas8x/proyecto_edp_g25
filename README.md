@@ -25,6 +25,6 @@ la letra a.
 – por último, generar un archivo comprimido que incluya los archivos
 generados en los items anteriores y todas las imágenes. El archivo
 comprimido debe poder accederse desde fuera del contenedor.
--------
+------
 • menu.sh: Debe incluirse un menú para elegir cada una de las opciones
 anteriores.
